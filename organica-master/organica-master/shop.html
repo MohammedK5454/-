@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories - Shopping</title>
+    <style>
+        /* CSS Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+        }
+        
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+        
+        header {
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px 0;
+        }
+        
+        .logo {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        
+        nav {
+            text-align: center;
+        }
+        
+        ul {
+            list-style-type: none;
+            display: inline-block;
+            padding: 0;
+        }
+        
+        li {
+            display: inline;
+            margin: 0 15px;
+        }
+        
+        a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        a.active {
+            color: #000;
+        }
+        
+        main {
+            padding: 30px 0;
+        }
+        
+        .categories {
+            background-color: #fff;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .category-links {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        
+        .category {
+            text-decoration: none;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .category img {
+            width: 100px;
+            margin-bottom: 10px;
+        }
+        
+        .category h3 {
+            font-size: 1.2rem;
+        }
+        
+        .products {
+            padding: 50px 0;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+        
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        
+        .product {
+            background-color: #fff;
+            box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            text-align: center;
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+        }
+        
+        .product img {
+            width: 150px;
+            margin-bottom: 10px;
+        }
+        
+        .product:hover {
+            transform: translateY(-5px);
+        }
+        
+        .footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1 class="logo">Fresh Mart</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="categories.html" class="active">Categories</a></li>
+                    <li><a href="cart.html">Cart</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="categories">
+            <div class="container">
+                <h2>Categories</h2>
+                <div class="category-links">
+                    <a href="vegetables.html" class="category">
+                        <img src="vegetable-icon.png" alt="Vegetables">
+                        <h3>Vegetables</h3>
+                    </a>
+                    <a href="fruits.html" class="category">
+                        <img src="fruit-icon.png" alt="Fruits">
+                        <h3>Fruits</h3>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="products vegetables">
+            <div class="container">
+                <h2>Vegetables</h2>
+                <div class="product-list">
+                    <!-- Products will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+
+        <section class="products fruits">
+            <div class="container">
+                <h2>Fruits</h2>
+                <div class="product-list">
+                    <!-- Products will be dynamically added here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy;
